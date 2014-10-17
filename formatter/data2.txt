@@ -1,0 +1,28 @@
+ public static void main(String[] args) 
+
+    
+{   
+             String sFileName = "C:\\Users\\Катрин\\IdeaProjects\\lab1\\src\\sample.formatter\\data.txt";
+         // Строка для имени файла     System.out.println("\nFILE TEST\n");
+             String stroka = "\n";
+             String fil = new String();
+            try 
+{       
+              FileWriter FW = new FileWriter("C:\\Users\\Катрин\\IdeaProjects\\lab1\\src\\sample.formatter\\data2.txt");
+                     BufferedWriter BWf = new BufferedWriter(FW);
+                     fil = f.toString();
+                     BWf.write(fil);
+                     BWf.close();
+                    PW.println("\n\nФАЙЛ ЗАПИСАН.\n\n\n");
+                                  }
+         catch (FileNotFoundException e) 
+{       
+                     PW.println("Файл " + sFileName + " не найден.");
+             }
+             }
+     catch (Exception e) 
+{   
+                System.out.println("Something is wrong....");
+        }
+       }
+ 
